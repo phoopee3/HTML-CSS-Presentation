@@ -1,0 +1,772 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/black.css"> -->
+		<!-- <link rel="stylesheet" href="css/theme/sky.css"> -->
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<style>
+		.hidden-link a {
+			display : none;
+		}
+		.hidden-link:hover a {
+			display : initial;
+		}
+
+		/* override some styles */
+		.reveal small {
+			vertical-align: middle;
+		}
+		</style>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Intro to CSS and HTML</h1>
+				</section>
+				
+				<section>
+					<h2>What we'll cover</h2>
+					<ul>
+						<li class="hidden-link">HTML <a href="#/html">&gt;</a></li>
+						<li class="hidden-link">CSS <a href="#/css">&gt;</a></li>
+					</ul>
+					<br><br>
+					<h3>Tools that allow us to code quicker and easier</h3>
+					<ul>
+						<li class="hidden-link">Bootstrap <a href="#/bootstrap">&gt;</a></li>
+						<li class="hidden-link">Coding editors <a href="#/editors">&gt;</a></li>
+						<li class="hidden-link">Emmet <a href="#/emmet">&gt;</a></li>
+						<li class="hidden-link">SASS/LESS <a href="#/sass">&gt;</a></li>
+						<li class="hidden-link">Other Tools <a href="#/tools">&gt;</a></li>
+					</ul>
+				</section>
+
+				<!--
+                oooo            .                     oooo  
+                `888          .o8                     `888  
+                 888 .oo.   .o888oo ooo. .oo.  .oo.    888  
+                 888P"Y88b    888   `888P"Y88bP"Y88b   888  
+                 888   888    888    888   888   888   888  
+                 888   888    888 .  888   888   888   888  
+                o888o o888o   "888" o888o o888o o888o o888o 
+				-->
+
+				<section id="html">
+					<h2>What is HTML?</h2>
+					<p>Is everyone familiar with HTML?</p>
+				</section>
+
+				<section>
+					<h2>HTML is Structure</h2>
+					<pre><code class="lang-html">
+&lt;html>
+	&lt;head>
+		<title>My Web Site!</title>
+	&lt;/head>
+	&lt;body>
+		<h1>Hello World</h1>
+		<p>Welcome to my web page!</p>
+	&lt;/body>
+&lt;/html>
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Tags help structure</h2>
+					<ul>
+						<li>nav</li>
+						<li>header</li>
+						<li>section</li>
+						<li>aside</li>
+						<li>p</li>
+						<li>div</li>
+						<li>table thead th tbody tr td</li>
+						<li>ul li, ol li</li>
+						<li>img</li>
+						<li>hr</li>
+						<li>... and many more</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Tags can have attributes</h2>
+					<pre><code class="lang-html">
+<a href="..."></a>
+<img src="..." alt="...">	
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Tags can have a Class and/or an Id</h2>
+					<pre><code class="lang-html">
+<a href="..." class="call-to-action"></a>
+<img id="hero" class="header" src="..." alt="...">	
+					</code></pre>
+				</section>
+
+				<!--
+                  .oooooo.    .oooooo..o  .oooooo..o 
+                 d8P'  `Y8b  d8P'    `Y8 d8P'    `Y8 
+                888          Y88bo.      Y88bo.      
+                888           `"Y8888o.   `"Y8888o.  
+                888               `"Y88b      `"Y88b 
+                `88b    ooo  oo     .d8P oo     .d8P 
+                 `Y8bood8P'  8""88888P'  8""88888P'  
+				-->
+
+				<section id="css">
+						<h2>What is CSS?</h2>
+						Is everyone familiar with CSS?
+				</section>
+
+				<section>
+						<h2>CSS is Style</h2>
+						Cascading style sheets (CSS) are a way to add style to your web page.
+				</section>
+
+				<section>
+						<h2>Syntax</h2>
+						<pre><code class="lang-css">
+selector {
+	property : value;
+}
+						</code></pre>
+				</section>
+
+				<section>
+					<h2>Style a &lt;P&gt; tag</h2>
+					<pre><code class="lang-css">
+p {
+	color : #333333; /* also known as gray20 */
+	font-size : 12px;
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Styling a Tag</h2>
+					<p>Styling a tag can be a good way to cover a lot of your site, but it will limit the amount of detail you can apply to the site.</p>
+				</section>
+
+				<section>
+					<h2>Make a class instead</h2>
+					<p>Classes allow you to reuse the styling on multiple elements.</p>
+					<pre><code class="lang-css">
+.call-to-action {
+	background-color : #ff0000; /* red */
+	color : #ffffff; /* white */
+	font-weight : bold;
+	font-size : 14px;
+}
+					</code></pre>
+					<p>And then in the html</p>
+					<pre><code class="lang-html">
+<a class="call-to-action">This is attention getting!</a>
+<p class="call-to-action">This might be a bit harsh on the eyes if overused.</p>
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Class Example</h2>
+					<a class="jsbin-embed" href="http://jsbin.com/qohicim/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+				</section>
+
+				<section>
+					<h2>ID's are an option</h2>
+					<h3>But usually not a good idea</h3>
+					<ul>
+						<li>IDs start with a #</li>
+						<li>You can only use them once per page</li>
+					</ul>
+					<pre><code class="lang-css">
+#call-to-action {
+	color : #ff00ff;
+	font-size : 20px;
+}
+					</code></pre>
+					<p>Then in the HTML</p>
+					<pre><code class="lang-html">
+<div id="call-to-action">
+	This will be fuchsia, but we can only use the ID once
+</div>
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>ID Example</h2>
+					<a class="jsbin-embed" href="http://jsbin.com/cewegah/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+				</section>
+
+				<section>
+					<h2>Other CSS Selectors</h2>
+					<p>X Y - Descendant</p>
+					<p>X > Y - Direct Descendant</p>
+					<p>X:hover - Pseudo Class</p>
+					<p>X + Y - Adjacent</p>
+					<p>X ~ Y - Sibling</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>X Y - Descendant</h2>
+						<pre><code class="lang-css">
+p {
+	color : red;
+}
+a {
+	color : green;
+}
+p a {
+	color : blue;
+}								
+						</code></pre>
+						<pre><code class="lang-html">
+<a>A link by itself</a>
+<p>
+	This is a paragraph <a href="">and this link will be blue</a>
+</p>
+<p>
+	<strong>this is bold text <a href="">and another blue link</a></strong>
+</p>
+						</code></pre>
+					</section>
+	
+					<section>
+						<h2>Descendant Example</h2>
+						<a class="jsbin-embed" href="http://jsbin.com/lufenoj/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+					</section>
+				</section>	
+
+				<section>
+					<section>
+						<h2>X > Y - Direct Descendant</h2>
+						<pre><code class="lang-css">
+p > a {
+	color : blue;
+}
+a {
+	color : green;
+}
+						</code></pre>
+						<pre><code class="lang-html">
+<p>
+	This is a paragraph <a href="">and this link will be blue</a>,
+	<strong>this is bold text <a href="">and a gree link</a></strong>
+</p>
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Direct Descendant Example</h2>
+						<a class="jsbin-embed" href="http://jsbin.com/gogemef/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>X:hover - Pseudo Class</h2>
+						<pre><code class="lang-css">
+a {
+	color : blue;
+}
+a:hover {
+	color : red;
+}
+						</code></pre>
+						<pre><code class="lang-html">
+<a href="#">This will turn red when the user hovers over it</a>
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Pseudo Class Example</h2>
+						<a class="jsbin-embed" href="http://jsbin.com/xegupo/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>X + Y - Adjacent</h2>
+						<pre><code class="lang-css">
+ul {
+	color : red;
+}
+ul + p {
+	color : blue;
+}
+						</code></pre>
+						<pre><code class="lang-html">
+<p>I'll be the default color</p>
+<ul>
+	<li>I will be red</li>
+</ul>
+<p>I will be blue</p>
+<p>I'll be the default color</p>
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Adjacent Example</h2>
+						<a class="jsbin-embed" href="http://jsbin.com/cecabi/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>X ~ Y - Sibling</h2>
+						<pre><code class="lang-css">
+ul {
+	color : red;
+}
+ul ~ p {
+	color : blue;
+}
+						</code></pre>
+						<pre><code class="lang-html">
+<p>I'll be the default color</p>
+<ul>
+	<li>I will be red</li>
+</ul>
+<p>I will be blue</p>
+<div>Some text</div>
+<p>I will be blue too</p>
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Sibling Example</h2>
+						<a class="jsbin-embed" href="http://jsbin.com/foyedab/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Specificity</h2>
+						<p>These selectors have the same specificity, so they are applied in the order they are listed, so all p tags will be blue</p>
+						<pre><code class="lang-css">
+p { color : red; }
+p { color : blue; }
+						</code></pre>
+						<a class="jsbin-embed" href="http://jsbin.com/jetocid/embed?html,css,output"> on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+					</section>
+	
+					<section>
+						<h2>Specificity...</h2>
+						<p>While the blue rule comes last, the first rule is more specific, so both rules will be applied appropriately</p>
+						<pre><code class="lang-css">
+div p { color : red; }
+p { color : blue; }
+						</code></pre>
+						<a class="jsbin-embed" href="http://jsbin.com/sapomek/embed?html,css,output"> on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+					</section>
+	
+					<section>
+						<h2>Specificity  ̄\_(ツ)_/ ̄</h2>
+						<p>Specificity can get complicated, and that complication is not really in the scope of this presentation</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Additional CSS Links</h2>
+					<ul>
+						<li>
+							Articles on Selectors
+							<div><a href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank">TutsPlus</a> - Additional examples of Selectors</div>
+							<div><a href="http://flukeout.github.io/" target="_blank">CSS Diner</a> - A CSS game to teach you selectors</div>
+						</li>
+						<li>
+							Articles on Specificity
+							<div><a href="https://www.w3.org/TR/CSS21/cascade.html#specificity" target="_blank">W3.org</a></div>
+							<div><a href="https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/" target="_blank">Smashing Magazine</a></div>
+						</li>
+					</ul>
+				</section>
+
+				<!-- 
+                oooooooooo.                          .                .                                 
+                `888'   `Y8b                       .o8              .o8                                 
+                 888     888  .ooooo.   .ooooo.  .o888oo  .oooo.o .o888oo oooo d8b  .oooo.   oo.ooooo.  
+                 888oooo888' d88' `88b d88' `88b   888   d88(  "8   888   `888""8P `P  )88b   888' `88b 
+                 888    `88b 888   888 888   888   888   `"Y88b.    888    888      .oP"888   888   888 
+                 888    .88P 888   888 888   888   888 . o.  )88b   888 .  888     d8(  888   888   888 
+                o888bood8P'  `Y8bod8P' `Y8bod8P'   "888" 8""888P'   "888" d888b    `Y888""8o  888bod8P' 
+                                                                                              888       
+                                                                                             o888o      
+				-->
+
+				<section id="bootstrap">
+					<h2>What is Bootstrap?</h2>
+					<p>Who has heard of Bootstrap?</p>
+				</section>
+
+				<section>
+					<h2>Bootstrap is...</h2>
+					<p>Bootstrap is an HMTL, CSS, and Javascript framework for developing websites quickly and easily.</p>
+					<p>Out of the box, bootstrap gives you:</p>
+					<ul>
+						<li>Mobile Ready Design</li>
+						<li>Responsive Pages</li>
+						<li>Grid System</li>
+						<li>Typography</li>
+						<li>Glyphicons</li>
+						<li>Components</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Pros and Cons</h2>
+					<p>The pros of Bootstrap is that it has done a lot of the heavy lifting for you, and can get you up and running relatively quickly.</p>
+					<p>This leads into the main con of bootstrap, which is that a lot of bootstrap themed sites can look the same if you don't apply the proper level of design polish to them.</p>
+				</section>
+
+				<section>
+					<h2>Grid System</h2>
+					<p><img src="images/grid-system.png" alt="Grid System"></p>
+				</section>
+				
+				<section>
+					<h2>Typography</h2>
+					<p><img src="images/typography.png" alt="Typography"></p>
+				</section>
+				
+				<section>
+					<h2>Glyphicons</h2>
+					<p><img src="images/glyphicons.png" alt="Glyphicons"></p>
+				</section>
+
+				<section>
+					<h2>Components</h2>
+					<ul>
+						<li>Navbar</li>
+						<li>Buttons and button groups</li>
+						<li>Breadcrumbs</li>
+						<li>Pagination</li>
+						<li>Alert Areas</li>
+						<li>Panels</li>
+						<li>Modal popups</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Examples</h2>
+					<p><img src="images/bootstrap-sites.png" alt="Bootstrap Sites"></p>
+				</section>
+
+				<section>
+					<h2>In Summary</h2>
+					<p>Bootstrap helps you write a good looking web site fairly easily and quickly.</p>
+					<p>By using well documented HTML formatting and well defined CSS classes, it allws others to be able to understand and assist with coding.</p>
+				</section>
+
+				<!--
+                oooooooooooo       .o8   o8o      .                               
+                `888'     `8      "888   `"'    .o8                               
+                 888          .oooo888  oooo  .o888oo  .ooooo.  oooo d8b  .oooo.o 
+                 888oooo8    d88' `888  `888    888   d88' `88b `888""8P d88(  "8 
+                 888    "    888   888   888    888   888   888  888     `"Y88b.  
+                 888       o 888   888   888    888 . 888   888  888     o.  )88b 
+                o888ooooood8 `Y8bod88P" o888o   "888" `Y8bod8P' d888b    8""888P' 
+				-->
+
+				<section id="editors">
+					<h2>Editors</h2>
+					<p>This is obviously a personal decision and each developer could be producing great code using entirely different editors.</p>
+				</section>
+
+				<section>
+					<h2>A short list</h2>
+					<ul>
+						<li><a href="https://atom.io/">Atom</a></li>
+						<li><a href="https://www.adobe.com/products/dreamweaver.html">Dreamweaver</a></li>
+						<li>Emacs/VI/Vim</li>
+						<li><a href="https://code.visualstudio.com/">Microsoft Code</a></li>
+						<li><a href="https://netbeans.org/">Netbeans</a></li>
+						<li><a href="http://www.sublimetext.com/">Sublime Text</a></li>
+						<li><a href="https://www.jetbrains.com/phpstorm/">Webstorm/PHPStorm</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Features</h2>
+					<ul>
+						<li>Lightweight</li>
+						<li>Plugin architecture and ecosystem</li>
+						<li>Multi-carat editing</li>
+						<li>Code completion</li>
+						<li>... more about this stuff in the <a href="#/tools">Tools</a> section
+					</ul>
+				</section>
+				
+				<!--
+					 .oooooo..o       .o.        .oooooo..o  .oooooo..o 
+					d8P'    `Y8      .888.      d8P'    `Y8 d8P'    `Y8 
+					Y88bo.          .8"888.     Y88bo.      Y88bo.      
+					 `"Y8888o.     .8' `888.     `"Y8888o.   `"Y8888o.  
+					     `"Y88b   .88ooo8888.        `"Y88b      `"Y88b 
+					oo     .d8P  .8'     `888.  oo     .d8P oo     .d8P 
+					8""88888P'  o88o     o8888o 8""88888P'  8""88888P'  
+				-->
+				
+				<section id="sass">
+					<h2>What is SASS?</h2>
+					<p>Who has heard of SASS, Compass, or LESS?</p>
+				</section>
+
+				<section>
+					<h2>SASS is CSS <small>(and more)</small></h2>
+					<p>SASS is an extension of CSS3 which adds nested rules, variables, mixins, selector inheritance, and more. SASS generates well formatted CSS and makes your stylesheets easier to organize and maintain.</p>
+				</section>
+
+				<section>
+					<h2>How is SCSS like CSS?</h2>
+					<h3>CSS</h3>
+					<pre><code class="lang-css">
+.call-to-action {
+	background-color : red;
+	color : white;
+	font-weight : bold;
+}
+					</code></pre>
+					<h3>SCSS</h3>
+					<pre><code class="lang-scss">
+.call-to-action {
+	background-color : red;
+	color : white;
+	font-weight : bold;
+}
+					</code></pre>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Advantages</h2>
+						<ul>
+							<li>Variables</li>
+							<li>Nesting</li>
+							<li>Mixins</li>
+							<li>Functions</li>
+							<li>Compiling</li>
+						</ul>
+					</section>
+	
+					<section>
+						<h2>Advantages - Variables</h2>
+						<h3>SCSS</h3>
+						<pre><code class="lang-scss">
+$alert-color : #ffffff;
+$alert-background-color : #ff0000;
+$font-size : 13px;
+
+.call-to-action {
+	background-color : $alert-background-color;
+	color : $alert-color;
+	font-size : $font-size;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Advantages - Variables</h2>
+						<h3>Converts to CSS</h3>
+						<pre><code class="lang-scss">
+.call-to-action {
+	background-color : #ff0000;
+	color : #ffffff;
+	font-size : 13px;
+}
+						</code></pre>
+					</section>
+	
+					<section>
+						<h2>Advantages - Nesting</h2>
+						<p>In CSS, you have to explictly write out each selector, even if they share the same base tag.</p>
+						<pre><code class="lang-css">
+nav ul {
+	margin : 0;
+	list-style : none;
+}
+nav ul li {
+	display : inline-block;
+}
+nav a {
+	display : block;
+	padding : 6px 12px;
+	text-decoration : none;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Advantages - Nesting</h2>
+						<p>In SASS you can nest your CSS selectors.</p>
+						<pre><code class="lang-css">
+nav {
+	ul {
+		margin : 0;
+		list-style : none;
+		li {
+			display : inline-block;
+		}
+	}
+
+	a {
+		display : block;
+		padding : 6px 12px;
+		text-decoration : none;
+	}
+}
+						</code></pre>
+					</section>
+	
+					<section>
+						<h2>Advantages - Mixins</h2>
+						<p>Mixins are methods that you can call to help you write less code</p>
+						<h3>SCSS</h3>
+						<pre><code class="lang-scss">
+@mixin border-radius ($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius:    $radius;
+	-ms-border-radius:     $radius;
+	border-radius:         $radius;
+}
+
+.box {
+	@include border-radius(10px);
+}
+						</code></pre>
+					</section>
+					
+					<section>
+						<h2>Advantages - Mixins</h2>
+						<h3>Compiles to CSS</h3>
+						<pre><code class="lang-css">
+.box {
+	-webkit-border-radius: 10px;
+	-moz-border-radius:    10px;
+	-ms-border-radius:     10px;
+	border-radius:         10px;
+}
+						</code></pre>
+					</section>
+	
+					<section>
+						<h2>Advantages - Functions</h2>
+						<p>Many built in functions, but you can also write your own</p>
+						<pre><code class="lang-css">
+p {
+	color : hsl(0, 100%, 50%);
+}	
+						</code></pre>
+						<pre><code class="lang-css">
+p {
+	color : #ff0000;
+}	
+						</code></pre>
+					</section>
+	
+					<section>
+						<h2>Advantages - Compiling</h2>
+						<p>SASS can compile to different levels of compression</p>
+						<ul>
+							<li>Nested</li>
+							<li>Expanded</li>
+							<li>Compact</li>
+							<li>Compressed</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Compass</h2>
+					<p>Compass is an open-source CSS authoring framework which uses the SASS stylesheet language as a foundation to make writing stylesheets powerful and easy.</p>
+					<ul>
+						<li>Mixins</li>
+						<li>Functions</li>
+						<li>Variables</li>
+						<li>Typography</li>
+					</ul>
+				</section>
+				
+				<!--
+				ooooooooooooo                     oooo           
+				8'   888   `8                     `888           
+					 888       .ooooo.   .ooooo.   888   .oooo.o 
+					 888      d88' `88b d88' `88b  888  d88(  "8 
+					 888      888   888 888   888  888  `"Y88b.  
+					 888      888   888 888   888  888  o.  )88b 
+					o888o     `Y8bod8P' `Y8bod8P' o888o 8""888P' 
+				-->
+
+				<section id="tools">
+					<h2>Tools</h2>
+					<p>This can go hand-in-hand with the editor you choose, or it can be additional tools you use outside of your editor to assist with your development workflow.</p>
+					<ul>
+						<li>SASS Compiling
+							<ul>
+								<li><a href="https://codekitapp.com/">Codekit</a> (Commercial, Mac only)</li>
+								<li><a href="http://koala-app.com/">Koala</a> (Free, Mac, Windows, Linux)</li>
+								<li><a href="https://prepros.io/">Prepros</a> (Commercial, Mac, Windows, Linux)</li>
+							</ul>
+						</li>
+						<li>Playgrounds
+							<ul>
+								<li><a href="http://jsbin.com/">JSBin</a></li>
+								<li><a href="https://codepen.io">Codepen</a></li>
+								<li><a href="https://jsfiddle.net/">JSFiddle</a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				// multiplex: {
+ 				// 	secret: "15055305247849026798",
+				// 	socketId: "a6bda765f010593e",
+				// 	url: 'https://reveal-js-multiplex-kdnrdnopwm.now.sh' // Location of socket.io server
+				// },
+
+				dependencies: [
+					// for multiplexing
+					// { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+					// { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js', async: true },
+					// { src: 'plugin/multiplex/master.js', async: true },
+					// { src: 'plugin/multiplex/client.js', async: true },
+					// other deps
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
