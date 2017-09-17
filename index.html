@@ -88,6 +88,9 @@
 	&lt;/body>
 &lt;/html>
 					</code></pre>
+					<aside class="notes">
+						The most important thing to take away from this presentation is that there should be a separation of structure and style.
+					</aside>
 				</section>
 
 				<section>
@@ -121,6 +124,9 @@
 <a href="..." class="call-to-action"></a>
 <img id="hero" class="header" src="..." alt="...">	
 					</code></pre>
+					<aside class="notes">
+						Classes and IDs lead us into the next topic, CSS
+					</aside>
 				</section>
 
 				<!--
@@ -134,22 +140,29 @@
 				-->
 
 				<section id="css">
-						<h2>What is CSS?</h2>
-						Is everyone familiar with CSS?
+					<h2>What is CSS?</h2>
+					Is everyone familiar with CSS?
 				</section>
 
 				<section>
-						<h2>CSS is Style</h2>
-						Cascading style sheets (CSS) are a way to add style to your web page.
+					<h2>CSS is Style</h2>
+					Cascading style sheets (CSS) are a way to add style to your web page.
+					<aside class="notes">
+						Again, the most important thing to take away from this presentation is that there should be a separation of structure and style.
+					</aside>
 				</section>
 
 				<section>
-						<h2>Syntax</h2>
-						<pre><code class="lang-css">
+					<h2>Syntax</h2>
+					<pre><code class="lang-css">
 selector {
 	property : value;
 }
-						</code></pre>
+					</code></pre>
+					<aside class="notes">
+						<li>The selector is the element that you are trying to match</li>
+						<li>The property is the property that you want to change</li>
+					</aside>
 				</section>
 
 				<section>
@@ -160,6 +173,10 @@ p {
 	font-size : 12px;
 }
 					</code></pre>
+					<aside class="notes">
+						<li>This will style all p tags on the site</li>
+						<li>This way is a little too generic</li>
+					</aside>
 				</section>
 
 				<section>
@@ -168,52 +185,62 @@ p {
 				</section>
 
 				<section>
-					<h2>Make a class instead</h2>
-					<p>Classes allow you to reuse the styling on multiple elements.</p>
-					<pre><code class="lang-css">
+					<section>
+						<h2>Make a class instead</h2>
+						<p>Classes allow you to reuse the styling on multiple elements.</p>
+						<pre><code class="lang-css">
 .call-to-action {
 	background-color : #ff0000; /* red */
 	color : #ffffff; /* white */
 	font-weight : bold;
 	font-size : 14px;
 }
-					</code></pre>
-					<p>And then in the html</p>
-					<pre><code class="lang-html">
+						</code></pre>
+						<p>And then in the html</p>
+						<pre><code class="lang-html">
 <a class="call-to-action">This is attention getting!</a>
 <p class="call-to-action">This might be a bit harsh on the eyes if overused.</p>
-					</code></pre>
+						</code></pre>
+					</section>
+	
+					<section>
+						<h2>Class Example</h2>
+						<a class="jsbin-embed" href="http://jsbin.com/qohicim/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+					</section>
+
+					<section>
+						<h2>Multi-Class Example</h2>
+						<p>You can string multiple classes together to obtain the style you want</p>
+						<a class="jsbin-embed" href="http://jsbin.com/jiwaha/embed?html,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+					</section>
 				</section>
 
 				<section>
-					<h2>Class Example</h2>
-					<a class="jsbin-embed" href="http://jsbin.com/qohicim/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
-				</section>
-
-				<section>
-					<h2>ID's are an option</h2>
-					<h3>But usually not a good idea</h3>
-					<ul>
-						<li>IDs start with a #</li>
-						<li>You can only use them once per page</li>
-					</ul>
-					<pre><code class="lang-css">
+					<section>
+						<h2>ID's are an option</h2>
+						<h3>But usually not a good idea</h3>
+						<ul>
+							<li>IDs start with a #</li>
+							<li>You can only use them once per page</li>
+						</ul>
+						<pre><code class="lang-css">
 #call-to-action {
 	color : #ff00ff;
 	font-size : 20px;
 }
-					</code></pre>
-					<p>Then in the HTML</p>
-					<pre><code class="lang-html">
+						</code></pre>
+						<p>Then in the HTML</p>
+						<pre><code class="lang-html">
 <div id="call-to-action">
 	This will be fuchsia, but we can only use the ID once
 </div>
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>ID Example</h2>
-					<a class="jsbin-embed" href="http://jsbin.com/cewegah/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+						</code></pre>
+					</section>
+	
+					<section>
+						<h2>ID Example</h2>
+						<a class="jsbin-embed" href="http://jsbin.com/cewegah/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+					</section>
 				</section>
 
 				<section>
@@ -512,7 +539,6 @@ p { color : blue; }
 						<li>Plugin architecture and ecosystem</li>
 						<li>Multi-carat editing</li>
 						<li>Code completion</li>
-						<li>... more about this stuff in the <a href="#/tools">Tools</a> section
 					</ul>
 				</section>
 				
@@ -719,7 +745,7 @@ p {
 
 				<section id="tools">
 					<h2>Tools</h2>
-					<p>This can go hand-in-hand with the editor you choose, or it can be additional tools you use outside of your editor to assist with your development workflow.</p>
+					<p>This is a short list of additional tools you use outside of your editor to assist with your development workflow.</p>
 					<ul>
 						<li>SASS Compiling
 							<ul>
