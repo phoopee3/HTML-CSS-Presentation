@@ -45,7 +45,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>Intro to CSS and HTML</h1>
+					<h1>Intro to<br>HTML &amp; CSS</h1>
 				</section>
 				
 				<section>
@@ -80,8 +80,11 @@
 				-->
 
 				<section id="html">
-					<h2>HTML</h2>
-					<p>Is everyone familiar with HTML?</p>
+					<h1>HTML</h1>
+					<aside class="notes">
+						<li>Is everyone familiar with HTML?</li>
+						<li>What is HTML?</li>
+					</aside>
 				</section>
 
 				<section>
@@ -117,6 +120,9 @@
 						<li>hr</li>
 						<li>... and many more</li>
 					</ul>
+					<aside class="notes">
+						These are obviously just a few of the HTML tags available
+					</aside>
 				</section>
 
 				<section>
@@ -125,6 +131,9 @@
 <a href="..."></a>
 <img src="" alt="...">	
 					</code></pre>
+					<aside class="notes">
+						An attribute is a modifier to the HTML element. It helps modify the default behavior of the tag, like telling an a tag where to link to, or what class an element should use for styling.
+					</aside>
 				</section>
 
 				<section>
@@ -149,8 +158,11 @@
 				-->
 
 				<section id="css">
-					<h2>CSS</h2>
-					Is everyone familiar with CSS?
+					<h1>CSS</h1>
+					<aside class="notes">
+						<li>Is everyone familiar with CSS?</li>
+						<li>What is CSS?</li>
+					</aside>
 				</section>
 
 				<section>
@@ -171,12 +183,12 @@ selector {
 					</code></pre>
 					<aside class="notes">
 						<li>The selector is the element that you are trying to match</li>
-						<li>The property is the property that you want to change</li>
+						<li>The property is what we want to change, color, font, margin, etc.</li>
 					</aside>
 				</section>
 
 				<section>
-					<h2>Style a &lt;P&gt; tag</h2>
+					<h2>Styling a tag</h2>
 					<pre><code class="lang-css">
 p {
 	color : #333333;
@@ -211,6 +223,10 @@ p {
 <a class="call-to-action">This is attention getting!</a>
 <p class="call-to-action">This might be a bit harsh on the eyes if overused.</p>
 						</code></pre>
+						<aside class="notes">
+							<p>Naming your classes is HARD, but I will stress that you should use semantic names, IE names that are descriptive about what the class represents without specifying the content they enclose.</p>
+							<p>An example is a class like "red-header-text", instead using something like "call-to-action".</p>
+						</aside>
 					</section>
 	
 					<section>
@@ -332,6 +348,15 @@ a:hover {
 						<pre><code class="lang-html">
 <a href="#">This will turn red when the user hovers over it</a>
 						</code></pre>
+						<aside class="notes">
+							Other pseudo classes:
+							<li>:first-child</li>
+							<li>:last-child</li>
+							<li>:nth-child(n)</li>
+							<li>:link</li>
+							<li>:visited</li>
+							<li>:active</li>
+						</aside>
 					</section>
 
 					<section>
@@ -398,7 +423,7 @@ ul ~ p {
 				<section>
 					<section>
 						<h2>Specificity</h2>
-						<p>These selectors have the same specificity, so they are applied in the order they are listed, so all p tags will be blue</p>
+						<p>These selectors have the same specificity, so they are applied in the order they are listed,<br>so all p tags will be blue</p>
 						<pre><code class="lang-css">
 p { color : red; }
 p { color : blue; }
@@ -450,9 +475,10 @@ p { color : blue; }
                 -->
 
 				<section id="chrome">
-					<h2>Chrome DevTools</h2>
+					<h1>Chrome DevTools</h1>
 					<p>A Developers Best Friend!<br><small>Or just someone who's curious</small></p>
 				</section>
+
 				<section>
 					<h2>What is Chrome DevTools?</h2>
 					<p>Chrome DevTools is a set of authoring, debugging, and profiling tools built into Google Chrome.</p>
@@ -511,7 +537,7 @@ p { color : blue; }
 				-->
 
 				<section id="wordpress">
-					<h2>Modifying CSS in WordPress</h2>
+					<h1>Using CSS in WordPress</h1>
 				</section>
 				<section>
 					<h2>Create a Child Theme</h2>
@@ -541,8 +567,11 @@ p { color : blue; }
 				-->
 
 				<section id="bootstrap">
-					<h2>Bootstrap</h2>
-					<p>Who has heard of Bootstrap?</p>
+					<h1>Bootstrap</h1>
+					<aside class="notes">
+						<li>Who has heard of Bootstrap?</li>
+						<li>What is bootstrap?</li>
+					</aside>
 				</section>
 
 				<section>
@@ -615,7 +644,7 @@ p { color : blue; }
 				-->
 
 				<section id="editors">
-					<h2>Editors</h2>
+					<h1>Editors</h1>
 					<p>This is obviously a personal decision and each developer could be producing great code using entirely different editors.</p>
 				</section>
 
@@ -635,11 +664,14 @@ p { color : blue; }
 				<section>
 					<h2>Features</h2>
 					<ul>
-						<li>Lightweight</li>
-						<li>Plugin architecture and ecosystem</li>
 						<li>Multi-carat editing</li>
+						<li>Plugin architecture and ecosystem</li>
+						<li>Lightweight</li>
 						<li>Code completion</li>
 					</ul>
+					<aside class="notes">
+						These are features that I look for in an editor, your list may vary.
+					</aside>
 				</section>
 
 				<!--
@@ -653,8 +685,11 @@ p { color : blue; }
 				-->
 
 				<section id="emmet">
-					<h2>Emmet</h2>
-					<p>Who has heard of Emmet?</p>
+					<h1>Emmet</h1>
+					<aside class="notes">
+						<li>Who has heard of Emmet?</li>
+						<li>Programmers are lazy</li>
+					</aside>
 				</section>
 
 				<section>
@@ -675,6 +710,12 @@ p { color : blue; }
 								<li>^ Climb up - Go up a level, break out of the nesting</li>
 							</ul>
 						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Syntax</h2>
+					<ul>
 						<li>* Multiplication - Repeat the element X times</li>
 						<li>() Grouping</li>
 						<li>. or # Class or ID - Give an element a class or ID</li>
@@ -685,20 +726,31 @@ p { color : blue; }
 				</section>
 
 				<section>
-					<h2>Examples</h2>
-					<p>Lets say you need an unordered list of links, you can type:</p>
+					<h2>Example</h2>
+					<p>This is a bit of a contrived example, but it shows a bunch of examples from the previous slides:</p>
 					<pre><code class="lang-html">
-ul>li*5>a
+html>head>title{My Site}^body>h1{Welcome!}+ul>li*3>a{Item $}^^button.call-to-action[data-foo="bar"]{Click Me}
 					</code></pre>
-					<p>This will expand to:</p>
+				</section>
+
+				<section>
+					<h2>Example</h2>
+					<p>Emmet will expant that to:</p>
 					<pre><code class="lang-html">
-<ul>
-	<li><a href=""></a></li>
-	<li><a href=""></a></li>
-	<li><a href=""></a></li>
-	<li><a href=""></a></li>
-	<li><a href=""></a></li>
-</ul>
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;My Site&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Welcome!&lt;/h1&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=""&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;button class="call-to-action" data-foo="bar"&gt;Click Me&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 					</code></pre>
 				</section>
 
@@ -721,13 +773,18 @@ ul>li*5>a
 				-->
 				
 				<section id="sass">
-					<h2>What is SASS?</h2>
-					<p>Who has heard of SASS, Compass, or LESS?</p>
+					<h1>SASS</h1>
+					<aside class="notes">
+						<li>What is SASS?</li>
+						<li>Who has heard of SASS, Compass, or LESS?</li>
+					</aside>
 				</section>
 
 				<section>
 					<h2>SASS is CSS <small>(and more)</small></h2>
-					<p>SASS is an extension of CSS3 which adds nested rules, variables, mixins, selector inheritance, and more. SASS generates well formatted CSS and makes your stylesheets easier to organize and maintain.</p>
+					<p>SASS is an extension of CSS3 which adds nested rules, variables, mixins, selector inheritance, and more.</p>
+					<p>SASS generates well formatted CSS and makes your stylesheets easier to organize and maintain.</p>
+					<p><a href="https://sass-lang.org">More information</a></p>
 				</section>
 
 				<section>
@@ -748,8 +805,10 @@ ul>li*5>a
 	font-weight : bold;
 }
 					</code></pre>
+					<aside class="notes">
+						You might think this looks exactly the same, and you'd be right. You can write straight CSS in SASS, so what does SASS give us?
+					</aside>
 				</section>
-
 
 				<section>
 					<section>
@@ -920,6 +979,10 @@ p {
 				-->
 
 				<section id="tools">
+					<h1>Tools</h1>
+				</section>
+
+				<section>
 					<h2>Tools</h2>
 					<p>This is a short list of additional tools you use outside of your editor to assist with your development workflow.</p>
 					<ul>
@@ -952,18 +1015,29 @@ p {
 
 				<section>
 					<section>
-						<h2>Links</h2>
+						<h1>Links</h1>
+					</section>
+
+					<section>
+						<h2>CSS Selectors</h2>
 						<ul>
-							<li>
-								Articles on Selectors
-								<div><a href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank">TutsPlus</a> - Additional examples of Selectors</div>
-								<div><a href="http://flukeout.github.io/" target="_blank">CSS Diner</a> - A CSS game to teach you selectors</div>
-							</li>
-							<li>
-								Articles on Specificity
-								<div><a href="https://www.w3.org/TR/CSS21/cascade.html#specificity" target="_blank">W3.org</a></div>
-								<div><a href="https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/" target="_blank">Smashing Magazine</a></div>
-							</li>
+							<li><a href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank">TutsPlus</a> - Additional examples of Selectors</li>
+							<li><a href="http://flukeout.github.io/" target="_blank">CSS Diner</a> - A CSS game to teach you selectors</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h2>CSS Specificity</h2>
+						<ul>
+							<li><a href="https://www.w3.org/TR/CSS21/cascade.html#specificity" target="_blank">W3.org</a></li>
+							<li><a href="https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/" target="_blank">Smashing Magazine</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>CSS Naming</h2>
+						<ul>
+							<li><a href="https://css-tricks.com/semantic-class-names/">Semantic Class Names</a></li>
 						</ul>
 					</section>
 
@@ -985,6 +1059,25 @@ p {
 							<li><a href="http://www.sublimetext.com/">Sublime Text</a></li>
 							<li><a href="https://www.jetbrains.com/phpstorm/">Webstorm/PHPStorm</a></li>
 						</ul>
+					</section>
+					<section>
+						<h2>Emmet</h2>
+						<ul>
+							<li><a href="https://emmet.io">Emmet.io</a></li>
+							<li><a href="https://docs.emmet.io/">Emmet Documentation</a></li>
+							<li><a href="https://docs.emmet.io/abbreviations/syntax/">Syntax Examples</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							SASS
+							<ul>
+								<li><a href="http://sass-lang.com/">SASS</a></li>
+								<li><a href="http://sass-lang.com/guide">SASS Guide</a></li>
+								<li><a href="http://compass-style.org/">Compass-Style.org</a></li>
+								<li><a href="http://compass-style.org/examples/">Compass Examples</a></li>
+						</ul>
+						</h2>
 					</section>
 				</section>
 
