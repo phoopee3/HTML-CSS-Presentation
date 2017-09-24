@@ -41,11 +41,28 @@
 			border : none;
 			box-shadow: none;
 		}
+		.reveal .social-links img {
+			border : none;
+			width : 100px;
+		}
+		.reveal .social-links a:hover img {
+			background: none;
+			border-color: none;
+			box-shadow: none;
+		}
 		</style>
 		<div class="reveal">
 			<div class="slides">
 				<section>
 					<h1>Intro to<br>HTML &amp; CSS</h1>
+					<p>Jason Lawton - <a href="mailto:jason@jasonlawton.com">jason@jasonlawton.com</a></p>
+					<p><a href="https://jasonlawton.com/presentation">jasonlawton.com/presentation</a></p>
+					<p class="social-links">
+						<a target="_blank" href="https://facebook.com/jasonlawton"><img src="images/facebook.png" alt="facebook"></a>
+						<a target="_blank" href="https://instagram.com/phoopee3"><img src="images/instagram.png" alt="instagram"></a>
+						<a target="_blank" href="https://github.com/phoopee3"><img src="images/github.png" alt="github"></a>
+						<a target="_blank" href="https://twitter.com/phoopee3"><img src="images/twitter.png" alt="twitter"></a>
+					</p>
 				</section>
 				
 				<section>
@@ -62,7 +79,7 @@
 							<div class="hidden-link">&bull; Bootstrap <a href="#/bootstrap">&gt;</a></div>
 					</div>
 					<div style="width:35%;float:left;text-align:left;">
-							<div class="hidden-link">&bull; Coding editors <a href="#/editors">&gt;</a></div>
+							<div class="hidden-link">&bull; Code editors <a href="#/editors">&gt;</a></div>
 							<div class="hidden-link">&bull; Emmet <a href="#/emmet">&gt;</a></div>
 							<div class="hidden-link">&bull; SASS/LESS <a href="#/sass">&gt;</a></div>
 							<div class="hidden-link">&bull; Other Tools <a href="#/tools">&gt;</a></div>
@@ -226,6 +243,7 @@ p {
 						<aside class="notes">
 							<p>Naming your classes is HARD, but I will stress that you should use semantic names, IE names that are descriptive about what the class represents without specifying the content they enclose.</p>
 							<p>An example is a class like "red-header-text", instead using something like "call-to-action".</p>
+							<p>There are a few methods for naming classes, like BEM, SMACSS, and OOCSS, see the links section for more information</p>
 						</aside>
 					</section>
 	
@@ -452,13 +470,13 @@ p { color : blue; }
 					<ul>
 						<li>
 							Articles on Selectors
-							<div><a href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank">TutsPlus</a> - Additional examples of Selectors</div>
-							<div><a href="http://flukeout.github.io/" target="_blank">CSS Diner</a> - A CSS game to teach you selectors</div>
+							<div><a target="_blank" href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank">TutsPlus</a> - Additional examples of Selectors</div>
+							<div><a target="_blank" href="http://flukeout.github.io/" target="_blank">CSS Diner</a> - A CSS game to teach you selectors</div>
 						</li>
 						<li>
 							Articles on Specificity
-							<div><a href="https://www.w3.org/TR/CSS21/cascade.html#specificity" target="_blank">W3.org</a></div>
-							<div><a href="https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/" target="_blank">Smashing Magazine</a></div>
+							<div><a target="_blank" href="https://www.w3.org/TR/CSS21/cascade.html#specificity" target="_blank">W3.org</a></div>
+							<div><a target="_blank" href="https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/" target="_blank">Smashing Magazine</a></div>
 						</li>
 					</ul>
 				</section>
@@ -486,44 +504,46 @@ p { color : blue; }
 				</section>
 
 				<section>
-					<h2>DevTools</h2>
-					<p>The main set of tools that we will focus on are:</p>
-					<ul>
-						<li>Elements - The rendered source code of the page</li>
-						<li>Console - An interactive console where you use to debug the site</li>
-						<li>Sources - A list of files that the page is calling</li>
-						<li>Network - Allows you to view what information is passing over the network</li>
-					</ul>
-					<p><a href="https://developers.google.com/web/tools/chrome-devtools/">More Information</a></p>
-					<aside class="notes">
-							<li>Console - An interactive console where you can type commands (Javascript) to debug/manipulate the page</li>
-							<li>Sources - Includes CSS, JS, images</li>
-							<li>Network - Shows HTML, CSS, image, and network calls, API calls where you can see the headers sent and data returned</li>
-					</aside>
-				</section>
-				
-				<section>
-					<h2>Elements</h2>
-					<p>Tweak the layout and design of your site by freely manipulating the DOM and CSS.</p>
-					<p><img src="images/elements.png" alt="Elements Tab"></p>
-				</section>
-
-				<section>
-					<h2>Console</h2>
-					<p>Log diagnostic information during development or interact with the JavaScript on the page.</p>
-					<p><img src="images/console.png" alt="Console Tab"></p>
-				</section>
-
-				<section>
-					<h2>Sources</h2>
-					<p>Debug your JavaScript using breakpoints or connect your local files via Workspaces to use DevTools as a code editor.</p>
-					<p><img src="images/sources.png" alt="Sources Tab"></p>
-				</section>
-				
-				<section>
-					<h2>Network</h2>
-					<p>Optimize page load performance and debug request issues.</p>
-					<p><img src="images/network.png" alt="Network Tab"></p>
+					<section>
+						<h2>DevTools</h2>
+						<p>The main set of tools that we will focus on are:</p>
+						<ul>
+							<li>Elements - The rendered source code of the page</li>
+							<li>Console - An interactive console where you use to debug the site</li>
+							<li>Sources - A list of files that the page is calling</li>
+							<li>Network - Allows you to view what information is passing over the network</li>
+						</ul>
+						<p><a target="_blank" href="https://developers.google.com/web/tools/chrome-devtools/">More Information</a></p>
+						<aside class="notes">
+								<li>Console - An interactive console where you can type commands (Javascript) to debug/manipulate the page</li>
+								<li>Sources - Includes CSS, JS, images</li>
+								<li>Network - Shows HTML, CSS, image, and network calls, API calls where you can see the headers sent and data returned</li>
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Elements</h2>
+						<p>Tweak the layout and design of your site by freely manipulating the DOM and CSS.</p>
+						<p><img src="images/elements.png" alt="Elements Tab"></p>
+					</section>
+	
+					<section>
+						<h2>Console</h2>
+						<p>Log diagnostic information during development or interact with the JavaScript on the page.</p>
+						<p><img src="images/console.png" alt="Console Tab"></p>
+					</section>
+	
+					<section>
+						<h2>Sources</h2>
+						<p>Debug your JavaScript using breakpoints or connect your local files via Workspaces to use DevTools as a code editor.</p>
+						<p><img src="images/sources.png" alt="Sources Tab"></p>
+					</section>
+					
+					<section>
+						<h2>Network</h2>
+						<p>Optimize page load performance and debug request issues.</p>
+						<p><img src="images/network.png" alt="Network Tab"></p>
+					</section>
 				</section>
 
 				<!-- 
@@ -546,7 +566,7 @@ p { color : blue; }
 				<section>
 					<h2>Create a Child Theme</h2>
 					<p>There are a few different ways to do it, I use a plugin.</p>
-					<p><a href="https://wordpress.org/plugins/child-theme-configurator/">Child Theme Configurator</a></p>
+					<p><a target="_blank" href="https://wordpress.org/plugins/child-theme-configurator/">Child Theme Configurator</a></p>
 					<p><img src="images/child-theme-configurator.png" alt="Child Theme Configurator"></p>
 				</section>
 				<section>
@@ -567,7 +587,7 @@ p { color : blue; }
 				-->
 
 				<section id="bootstrap">
-					<h1>Bootstrap</h1>
+					<h1>Bootstrap <small>(v3.3)</small></h1>
 					<aside class="notes">
 						<li>Who has heard of Bootstrap?</li>
 						<li>What is bootstrap?</li>
@@ -595,42 +615,45 @@ p { color : blue; }
 				</section>
 
 				<section>
-					<h2>Grid System</h2>
-					<p><img src="images/grid-system.png" alt="Grid System"></p>
-				</section>
-				
-				<section>
-					<h2>Typography</h2>
-					<p><img src="images/typography.png" alt="Typography"></p>
-				</section>
-				
-				<section>
-					<h2>Glyphicons</h2>
-					<p><img src="images/glyphicons.png" alt="Glyphicons"></p>
-				</section>
-
-				<section>
-					<h2>Components</h2>
-					<ul>
-						<li>Navbar</li>
-						<li>Buttons and button groups</li>
-						<li>Breadcrumbs</li>
-						<li>Pagination</li>
-						<li>Alert Areas</li>
-						<li>Panels</li>
-						<li>Modal popups</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Examples</h2>
-					<p><img src="images/bootstrap-sites.png" alt="Bootstrap Sites"></p>
+					<section>
+						<h2>Grid System</h2>
+						<p><img src="images/grid-system.png" alt="Grid System"></p>
+					</section>
+					
+					<section>
+						<h2>Typography</h2>
+						<p><img src="images/typography.png" alt="Typography"></p>
+					</section>
+					
+					<section>
+						<h2>Glyphicons</h2>
+						<p><img src="images/glyphicons.png" alt="Glyphicons"></p>
+					</section>
+	
+					<section>
+						<h2>Components</h2>
+						<ul>
+							<li>Navbar</li>
+							<li>Buttons and button groups</li>
+							<li>Breadcrumbs</li>
+							<li>Pagination</li>
+							<li>Alert Areas</li>
+							<li>Panels</li>
+							<li>Modal popups</li>
+						</ul>
+					</section>
+	
+					<section>
+						<h2>Examples</h2>
+						<p><img src="images/bootstrap-sites.png" alt="Bootstrap Sites"></p>
+					</section>
 				</section>
 
 				<section>
 					<h2>In Summary</h2>
 					<p>Bootstrap helps you write a good looking web site fairly easily and quickly.</p>
 					<p>By using well documented HTML formatting and well defined CSS classes, it allows others to be able to understand and assist with coding.</p>
+					<p><a href="https://getbootstrap.com" target="blank">More information</a></p>
 				</section>
 
 				<!--
@@ -644,20 +667,20 @@ p { color : blue; }
 				-->
 
 				<section id="editors">
-					<h1>Editors</h1>
+					<h1>Code Editors</h1>
 					<p>This is obviously a personal decision and each developer could be producing great code using entirely different editors.</p>
 				</section>
 
 				<section>
 					<h2>A short list</h2>
 					<ul>
-						<li><a href="https://atom.io/">Atom</a></li>
-						<li><a href="https://www.adobe.com/products/dreamweaver.html">Dreamweaver</a></li>
+						<li><a target="_blank" href="https://atom.io/">Atom</a></li>
+						<li><a target="_blank" href="https://www.adobe.com/products/dreamweaver.html">Dreamweaver</a></li>
 						<li>Emacs/VI/Vim</li>
-						<li><a href="https://code.visualstudio.com/">Microsoft Code</a></li>
-						<li><a href="https://netbeans.org/">Netbeans</a></li>
-						<li><a href="http://www.sublimetext.com/">Sublime Text</a></li>
-						<li><a href="https://www.jetbrains.com/phpstorm/">Webstorm/PHPStorm</a></li>
+						<li><a target="_blank" href="https://netbeans.org/">Netbeans</a></li>
+						<li><a target="_blank" href="http://www.sublimetext.com/">Sublime Text</a></li>
+						<li><a target="_blank" href="https://code.visualstudio.com/">Visual Studio Code</a> *</li>
+						<li><a target="_blank" href="https://www.jetbrains.com/phpstorm/">Webstorm/PHPStorm</a></li>
 					</ul>
 				</section>
 
@@ -696,7 +719,7 @@ p { color : blue; }
 					<h2>Emmet is...</h2>
 					<p>Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow.</p>
 					<p>At it's most basic, emmet allows you to write shorthand code that gets expanded to full blown html, which you can then tab through and fill out as necessary.</p>
-					<a href="https://emmet.io">Emmet.io</a>
+					<a target="_blank" href="https://emmet.io">Emmet.io</a>
 				</section>
 
 				<section>
@@ -726,39 +749,41 @@ p { color : blue; }
 				</section>
 
 				<section>
-					<h2>Example</h2>
-					<p>This is a bit of a contrived example, but it shows a bunch of examples from the previous slides:</p>
-					<pre><code class="lang-html">
-html>head>title{My Site}^body>h1{Welcome!}+ul>li*3>a{Item $}^^button.call-to-action[data-foo="bar"]{Click Me}
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Example</h2>
-					<p>Emmet will expant that to:</p>
-					<pre><code class="lang-html">
-&lt;html&gt;
-&lt;head&gt;
-	&lt;title&gt;My Site&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-	&lt;h1&gt;Welcome!&lt;/h1&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=""&gt;Item 1&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=""&gt;Item 2&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=""&gt;Item 3&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;button class="call-to-action" data-foo="bar"&gt;Click Me&lt;/button&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-					</code></pre>
+					<section>
+						<h2>Example</h2>
+						<p>This is a bit of a contrived example, but it shows a bunch of examples from the previous slides:</p>
+						<pre><code class="lang-html">
+	html>head>title{My Site}^body>h1{Welcome!}+ul>li*3>a{Item $}^^button.call-to-action[data-foo="bar"]{Click Me}
+						</code></pre>
+					</section>
+	
+					<section>
+						<h2>Example</h2>
+						<p>Emmet will expant that to:</p>
+						<pre><code class="lang-html">
+	&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;My Site&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Welcome!&lt;/h1&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href=""&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;button class="call-to-action" data-foo="bar"&gt;Click Me&lt;/button&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;
+						</code></pre>
+					</section>
 				</section>
 
 				<section>
 					<h2>More information</h2>
 					<ul>
-						<li><a href="https://docs.emmet.io/">Emmet.io</a></li>
-						<li><a href="https://docs.emmet.io/abbreviations/syntax/">Syntax Examples</a></li>
+						<li><a target="_blank" href="https://docs.emmet.io/">Emmet.io</a></li>
+						<li><a target="_blank" href="https://docs.emmet.io/abbreviations/syntax/">Syntax Examples</a></li>
 					</ul>
 				</section>
 				
@@ -784,7 +809,7 @@ html>head>title{My Site}^body>h1{Welcome!}+ul>li*3>a{Item $}^^button.call-to-act
 					<h2>SASS is CSS <small>(and more)</small></h2>
 					<p>SASS is an extension of CSS3 which adds nested rules, variables, mixins, selector inheritance, and more.</p>
 					<p>SASS generates well formatted CSS and makes your stylesheets easier to organize and maintain.</p>
-					<p><a href="https://sass-lang.org">More information</a></p>
+					<p><a target="_blank" href="https://sass-lang.org">More information</a></p>
 				</section>
 
 				<section>
@@ -963,8 +988,8 @@ p {
 				<section>
 					<h2>More Information</h2>
 					<ul>
-						<li><a href="http://compass-style.org/">Compass-Style.org</a></li>
-						<li><a href="http://compass-style.org/examples/">Compass Examples</a></li>
+						<li><a target="_blank" href="http://compass-style.org/">Compass-Style.org</a></li>
+						<li><a target="_blank" href="http://compass-style.org/examples/">Compass Examples</a></li>
 					</ul>
 				</section>
 				
@@ -988,16 +1013,16 @@ p {
 					<ul>
 						<li>SASS Compiling
 							<ul>
-								<li><a href="https://codekitapp.com/">Codekit</a> (Commercial, Mac only)</li>
-								<li><a href="http://koala-app.com/">Koala</a> (Free, Mac, Windows, Linux)</li>
-								<li><a href="https://prepros.io/">Prepros</a> (Commercial, Mac, Windows, Linux)</li>
+								<li><a target="_blank" href="https://codekitapp.com/">Codekit</a> (Commercial, Mac only)</li>
+								<li><a target="_blank" href="http://koala-app.com/">Koala</a> (Free, Mac, Windows, Linux)</li>
+								<li><a target="_blank" href="https://prepros.io/">Prepros</a> (Commercial, Mac, Windows, Linux)</li>
 							</ul>
 						</li>
 						<li>Playgrounds
 							<ul>
-								<li><a href="http://jsbin.com/">JSBin</a></li>
-								<li><a href="https://codepen.io">Codepen</a></li>
-								<li><a href="https://jsfiddle.net/">JSFiddle</a></li>
+								<li><a target="_blank" href="http://jsbin.com/">JSBin</a></li>
+								<li><a target="_blank" href="https://codepen.io">Codepen</a></li>
+								<li><a target="_blank" href="https://jsfiddle.net/">JSFiddle</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -1021,64 +1046,111 @@ p {
 					<section>
 						<h2>CSS Selectors</h2>
 						<ul>
-							<li><a href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank">TutsPlus</a> - Additional examples of Selectors</li>
-							<li><a href="http://flukeout.github.io/" target="_blank">CSS Diner</a> - A CSS game to teach you selectors</li>
+							<li><a target="_blank" href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank">TutsPlus</a> - Additional examples of Selectors</li>
+							<li><a target="_blank" href="http://flukeout.github.io/" target="_blank">CSS Diner</a> - A CSS game to teach you selectors</li>
 						</ul>
 					</section>
 					
 					<section>
 						<h2>CSS Specificity</h2>
 						<ul>
-							<li><a href="https://www.w3.org/TR/CSS21/cascade.html#specificity" target="_blank">W3.org</a></li>
-							<li><a href="https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/" target="_blank">Smashing Magazine</a></li>
+							<li><a target="_blank" href="https://www.w3.org/TR/CSS21/cascade.html#specificity" target="_blank">W3.org</a></li>
+							<li><a target="_blank" href="https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/" target="_blank">Smashing Magazine</a></li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>CSS Naming</h2>
 						<ul>
-							<li><a href="https://css-tricks.com/semantic-class-names/">Semantic Class Names</a></li>
+							<li><a target="_blank" href="https://en.bem.info/">BEM</a></li>
+							<li><a target="_blank" href="https://github.com/stubbornella/oocss/tree/master/oocss">OOCSS</a></li>	
+							<li><a target="_blank" href="https://css-tricks.com/semantic-class-names/">Semantic Class Names</a></li>
+							<li><a target="_blank" href="https://smacss.com/">SMACSS</a></li>
 						</ul>
+					</section>
+
+					<section>
+						<h2>Bootstrap</h2>
+						<p><a href="https://getbootstrap.com" target="blank">Bootstrap</a> (<a target="_blank" href="https://getbootstrap.com/docs/3.3/">v3.3</a>)</p>
 					</section>
 
 					<section>
 						<h2>Tools</h2>
 						<ul>
-							<li><a href="https://developers.google.com/web/tools/chrome-devtools/">Chrome DevTools Documentation</a></li>
-							<li><a href="https://wordpress.org/plugins/child-theme-configurator/">Child Theme Configurator</a></li>
+							<li><a target="_blank" href="https://developers.google.com/web/tools/chrome-devtools/">Chrome DevTools Documentation</a></li>
+							<li><a target="_blank" href="https://wordpress.org/plugins/child-theme-configurator/">Child Theme Configurator</a></li>
 						</ul>
 					</section>
 					<section>
 						<h2>Code Editors</h2>
 						<ul>
-							<li><a href="https://atom.io/">Atom</a></li>
-							<li><a href="https://www.adobe.com/products/dreamweaver.html">Dreamweaver</a></li>
+							<li><a target="_blank" href="https://atom.io/">Atom</a></li>
+							<li><a target="_blank" href="https://www.adobe.com/products/dreamweaver.html">Dreamweaver</a></li>
 							<li>Emacs/VI/Vim</li>
-							<li><a href="https://code.visualstudio.com/">Microsoft Code</a></li>
-							<li><a href="https://netbeans.org/">Netbeans</a></li>
-							<li><a href="http://www.sublimetext.com/">Sublime Text</a></li>
-							<li><a href="https://www.jetbrains.com/phpstorm/">Webstorm/PHPStorm</a></li>
+							<li><a target="_blank" href="https://netbeans.org/">Netbeans</a></li>
+							<li><a target="_blank" href="http://www.sublimetext.com/">Sublime Text</a></li>
+							<li><a target="_blank" href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+							<li><a target="_blank" href="https://www.jetbrains.com/phpstorm/">Webstorm/PHPStorm</a></li>
 						</ul>
 					</section>
 					<section>
 						<h2>Emmet</h2>
 						<ul>
-							<li><a href="https://emmet.io">Emmet.io</a></li>
-							<li><a href="https://docs.emmet.io/">Emmet Documentation</a></li>
-							<li><a href="https://docs.emmet.io/abbreviations/syntax/">Syntax Examples</a></li>
+							<li><a target="_blank" href="https://emmet.io">Emmet.io</a></li>
+							<li><a target="_blank" href="https://docs.emmet.io/">Emmet Documentation</a></li>
+							<li><a target="_blank" href="https://docs.emmet.io/abbreviations/syntax/">Syntax Examples</a></li>
 						</ul>
 					</section>
 					<section>
-						<h2>
-							SASS
-							<ul>
-								<li><a href="http://sass-lang.com/">SASS</a></li>
-								<li><a href="http://sass-lang.com/guide">SASS Guide</a></li>
-								<li><a href="http://compass-style.org/">Compass-Style.org</a></li>
-								<li><a href="http://compass-style.org/examples/">Compass Examples</a></li>
+						<h2>SASS</h2>
+						<ul>
+							<li><a target="_blank" href="http://sass-lang.com/">SASS</a></li>
+							<li><a target="_blank" href="http://sass-lang.com/guide">SASS Guide</a></li>
+							<li><a target="_blank" href="http://compass-style.org/">Compass-Style.org</a></li>
+							<li><a target="_blank" href="http://compass-style.org/examples/">Compass Examples</a></li>
 						</ul>
-						</h2>
 					</section>
+					<section>
+						<h2>Tools</h2>
+						<ul>
+							<li>SASS/JS/HTML Compiling/Minification
+								<ul>
+									<li><a target="_blank" href="https://codekitapp.com/">Codekit</a> (Commercial, Mac only)</li>
+									<li><a target="_blank" href="http://koala-app.com/">Koala</a> (Free, Mac, Windows, Linux)</li>
+									<li><a target="_blank" href="https://prepros.io/">Prepros</a> (Commercial, Mac, Windows, Linux)</li>
+								</ul>
+							</li>
+							<li>Playgrounds
+								<ul>
+									<li><a target="_blank" href="http://jsbin.com/">JSBin</a></li>
+									<li><a target="_blank" href="https://codepen.io">Codepen</a></li>
+									<li><a target="_blank" href="https://jsfiddle.net/">JSFiddle</a></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<!--
+                oooooooooooo                   .o8  
+                `888'     `8                  "888  
+                 888         ooo. .oo.    .oooo888  
+                 888oooo8    `888P"Y88b  d88' `888  
+                 888    "     888   888  888   888  
+                 888       o  888   888  888   888  
+                o888ooooood8 o888o o888o `Y8bod88P" 
+				-->
+
+				<section>
+					<h1>Thanks!</h1>
+					<p>Jason Lawton - <a href="mailto:jason@jasonlawton.com">jason@jasonlawton.com</a></p>
+					<p><a href="https://jasonlawton.com/presentation">jasonlawton.com/presentation</a> - <a href="https://github.com/phoopee3/HTML-CSS-Presentation">source code</a></p>
+					<p class="social-links">
+						<a href="https://facebook.com/jasonlawton"><img src="images/facebook.png" alt="facebook"></a>
+						<a href="https://instagram.com/phoopee3"><img src="images/instagram.png" alt="instagram"></a>
+						<a href="https://github.com/phoopee3"><img src="images/github.png" alt="github"></a>
+						<a href="https://twitter.com/phoopee3"><img src="images/twitter.png" alt="twitter"></a>
+					</p>
 				</section>
 
 			</div>
